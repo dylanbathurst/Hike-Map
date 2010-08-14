@@ -1,0 +1,9 @@
+* {margin:0; padding:0;}
+html {height:100%; font-family:'Helvetica Neue', Helvetica, sans-serif; font-size:13px;}
+body {height:100%; margin:0px; padding:0px}
+#contentFrame {height:100%; width:350px; float:left; -webkit-box-shadow:inset -5px -5px 5px #999;}
+#contentFrame #trailInfo {margin:10px;}
+#trailInfo h1 {font-family:Georgia; font-size:20px; font-style:italic; font-weight:normal;}
+#mapContainer {margin-left:350px; height:100%;}
+#map_canvas {height:100%;}
+#trailInfo ul {margin:10px 0 10px 30px;}

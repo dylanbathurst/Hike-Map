@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My New CouchApp</title>
+  <!-- <link rel="stylesheet" href="style/main.css" type="text/css"> -->
+  <style type="text/css" media="screen">
+    label {display:block;}
+  </style>
+</head>
+<body>
+  <form id="hikeForm" action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" />
+    
+    <label for="lat">Latitude:</label>
+    <input type="text" name="lat" id="lat" />
+    
+    <label for="lng">Longitude:</label>
+    <input type="text" name="lng" id="lng" />
+    
+    <label for="elevation">Elevation:</label>
+    <input type="text" name="elevation" id="elevation" />
+    
+    <label for="distance">distance:</label>
+    <input type="text" name="distance" id="distance" />
+    
+    <label for="description">description:</label>
+    <textarea name="description" id="description"></textarea>    
+
+    <input type="submit" name="submit" value="Submit" id="submit">
+  </form>
+  <script src="vendor/couchapp/loader.js"></script>
+  <script type="text/javascript" src="js/hikeForm.js"></script>
+  <script type="text/javascript" src="js/global.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    // $.couch.db('hike').saveDoc(
+    //   {
+    //     name: "Mount Charleston",
+    //     elevation: 12800,
+    //     distance: 17,
+    //     description: "This is a treacherous hike that can kill you if you get to the top and get stuck in an effing lightning storm!"
+    //   },
+    //   {
+    //     success: function(){
+    //       alert('Saved Gud!');
+    //     }
+    //   }
+    // );
+    // $.couch.app(function(app) {
+    //   $('#submit').click(function (e) {
+    //     e.preventDefault();
+    //     $('#data').submit();
+    //   })
+    //   
+    //   var postForm = app.docForm("#data", {
+    //     // id : ,
+    //     fields : [
+    //       "name",
+    //       "elevation",
+    //       "distance",
+    //       "description"
+    //     ],
+    //     
+    //     // template : {
+    //     //   type : "hike"
+    //     // },
+    //     
+    //     beforeSave : function(doc) {
+    //       console.log('beforeSave function' + ': ' + doc);
+    //     },
+    //     
+    //     success : function(resp) {
+    //       console.log(resp);
+    //       scroll(0,0);
+    //       
+    //       $('#thanks').fadeIn(500).delay(3000).fadeOut(500);
+    //     }
+    //   });
+    // });
+  </script>
+</body>
+</html>
