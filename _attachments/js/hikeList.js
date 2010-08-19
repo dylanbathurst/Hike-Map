@@ -1,5 +1,12 @@
 $(document).ready(function(){
-  // initialize();
+  // Crockford Fix for Object.create. http://javascript.crockford.com/prototypal.html
+  if (typeof Object.create !== 'function') {
+    Object.create = function (o) {
+        function F() {}
+        F.prototype = o;
+        return new F();
+    };
+  }
   var m = Object.create(map);
   m.initializer('map_canvas');
   m.displayHikes();
